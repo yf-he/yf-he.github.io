@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yufei He</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, 'Noto Serif SC', serif;
+            color: #222;
+            line-height: 1.75;
+            font-size: 19px;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 60px 32px 80px;
+            background: #fcfcfa;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: #3b5998;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: #1a3a6a;
+            text-decoration: underline;
+        }
+
+        /* ── Header ── */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 48px;
+            margin-bottom: 48px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e8e6e1;
+        }
+
+        .header-text {
+            flex: 1;
+            padding-top: 4px;
+        }
+
+        .header h1 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+            line-height: 1.15;
+            margin-bottom: 6px;
+        }
+
+        .header h1 .chinese-name {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #555;
+            margin-left: 10px;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #444;
+            letter-spacing: 0.3px;
+            margin-bottom: 20px;
+        }
+
+        .header .links {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            letter-spacing: 0.2px;
+        }
+
+        .header .links a {
+            margin-right: 16px;
+            color: #3b5998;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 14px;
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        /* ── Sections ── */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8e6e1;
+            letter-spacing: -0.3px;
+        }
+
+        section p {
+            margin-bottom: 14px;
+        }
+
+        /* ── Footer ── */
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid #e8e6e1;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #666;
+            letter-spacing: 0.3px;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            body {
+                padding: 32px 20px 48px;
+                font-size: 16px;
+            }
+
+            .header {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+                gap: 24px;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            .header .links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .header .links a {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-text">
+        <h1>Yufei He <span class="chinese-name">何羽飞</span></h1>
+        <p class="tagline">Researcher in LLM Agents, Post-Training and Reasoning</p>
+        <p class="links">
+            <a href="mailto:yufei.he@u.nus.edu">[Email]</a>
+            <a href="https://scholar.google.com/citations?user=_3HjpOMAAAAJ&hl">[Google Scholar]</a>
+            <a href="https://github.com/yf-he">[GitHub]</a>
+        </p>
+    </div>
+    <img class="profile-photo" src="assets/profile.jpg" alt="Yufei He">
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a PhD student in Computer Science at the <a href="https://www.nus.edu.sg/">National University of Singapore (NUS)</a>, advised by <a href="https://bhooi.github.io/">Prof. Bryan Hooi</a>. My research focuses on building self-improving LLM agents that can continuously learn from interaction, feedback, and experience. To support this goal, I have extensively studied post-training, reasoning, and agentic behaviors in large-scale models.</p>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <p>For a full and up-to-date list of my publications, please see my <a href="https://scholar.google.com/citations?user=_3HjpOMAAAAJ&hl">Google Scholar page</a>.</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Yufei He</p>
+</footer>
+
+</body>
+</html>
