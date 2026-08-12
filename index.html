@@ -39,10 +39,34 @@
     }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/crimson-pro-var-latin.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-var-latin.woff2" crossorigin>
     <style>
+        @font-face {
+            font-family: 'Crimson Pro';
+            src: url('assets/fonts/crimson-pro-var-latin.woff2') format('woff2');
+            font-weight: 200 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('assets/fonts/inter-var-latin.woff2') format('woff2');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Noto Serif SC';
+            src: url('assets/fonts/noto-serif-sc-name.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+            unicode-range: U+4F55, U+7FBD, U+98DE;
+        }
+
         *, *::before, *::after {
             margin: 0;
             padding: 0;
